@@ -22,12 +22,12 @@
         </div>
 
         <menu>
-            <a href="" id="btn_share" class="btn" title="Share">
+            <a href="" id="btn_share" class="btn" title="{{t "Share"}}">
                 <span aria-hidden="true" data-icon="S"></span>
-                <strong>Share</strong>
+                <strong>{{t "Share"}}</strong>
             </a>
             <a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" id="btn_comment" class="btn" target="_blank">
-                <span aria-hidden="true" data-icon="C"></span> Comment on Twitter
+                <span aria-hidden="true" data-icon="C"></span> {{t "Comment on Twitter"}}
             </a>
         </menu>
 
@@ -36,9 +36,9 @@
         <footer class="post-footer" role="contentinfo">
 
             <div class="vcard">
-                <a href="{{@site.url}}/rss" id="btn_feed" class="btn" title="Feed" target="_blank">
+                <a href="{{@site.url}}/rss" id="btn_feed" class="btn" title="{{t "Feed"}}" target="_blank">
                     <span aria-hidden="true" data-icon=")"></span>
-                    <strong>Feed</strong>
+                    <strong>{{t "Feed"}}</strong>
                 </a>
 
                 {{#if profile_image}}
@@ -72,8 +72,8 @@
         <div class="wrap">
             <div class="inner">
                 <header>
-                    Share
-                    <a href="" class="close" title="Close">&times;</a>
+                    {{t "Share"}}
+                    <a href="" class="close" title="{{t "Close"}}">&times;</a>
                 </header>
 
                 <div class="roon-share-links">
@@ -104,14 +104,14 @@
     <div id="post_nav">
         <nav role="navigation">
             {{#next_post}}
-                <a href="{{url}}" id="post_next" title="Next Post">
+                <a href="{{url}}" id="post_next" title="{{t "Next Post"}}">
                     <span aria-hidden="true" data-icon=">"></span>
-                    The Newer Post
+                    {{t "The Newer Post"}}
                 </a>
             {{/next_post}}
             {{#prev_post}}
-                <a href="{{url}}" id="post_prev" title="Previous Post">
-                    Something Older
+                <a href="{{url}}" id="post_prev" title="{{t "Previous Post"}}"">
+                    {{t "Something Older"}}
                     <span aria-hidden="true" data-icon=">"></span>
                 </a>
             {{/prev_post}}
